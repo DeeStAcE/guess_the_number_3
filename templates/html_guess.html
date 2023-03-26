@@ -5,6 +5,7 @@
     <title>Guess the number</title>
 </head>
 <body>
+<h4>It is number {{ guess }}</h4>
 <form method="POST">
     <label>
         <input type="submit" name="too_small" value="Too small">
@@ -15,6 +16,8 @@
     <label>
         <input type="submit" name="you_win" value="You win">
     </label>
+    <input name="min" value="{{ min_ }}">
+    <input name="max" value="{{ max_ }}">
 </form>
 </body>
 </html>
