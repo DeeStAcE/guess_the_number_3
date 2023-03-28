@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the number</title>
+</head>
+<body>
+<h4>Think of number between 0 and 1000</h4>
+<form action="/guess" method="POST">
+    <label>
+        <input type="submit" name="start" value="Start">
+    </label>
+    <input type="hidden" name="min" value="{{ min_ }}">
+    <input type="hidden" name="max" value="{{ max_ }}">
+</form>
+</body>
+</html>
